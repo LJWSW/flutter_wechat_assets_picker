@@ -13,7 +13,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  extended_image: ^6.2.0
+  extended_image: ^7.0.2
   photo_manager:
     git:
       url: git@github.com:flutting/flutter_photo_manager.git
