@@ -36,13 +36,16 @@ Widget defaultPickerTestApp({
       Locale('ja'),
       Locale('ar'),
       Locale('fr'),
+      Locale('vi'),
+      Locale('ko'),
     ],
     locale: locale,
   );
 }
 
 class _DefaultHomePage extends StatelessWidget {
-  const _DefaultHomePage(this.onButtonPressed, {Key? key}) : super(key: key);
+  // ignore: unused_element
+  const _DefaultHomePage(this.onButtonPressed, {super.key});
 
   final void Function(BuildContext)? onButtonPressed;
 
@@ -98,9 +101,7 @@ class TestAssetPickerDelegate extends AssetPickerDelegate {
       filterOptions: pickerConfig.filterOptions,
     );
     provider
-      ..currentAssets = <AssetEntity>[
-        const AssetEntity(id: 'test', typeInt: 0, width: 0, height: 0),
-      ]
+      ..currentAssets = <AssetEntity>[testAssetEntity]
       ..currentPath = PathWrapper<AssetPathEntity>(
         path: pathEntity,
         assetCount: 1,
@@ -140,3 +141,10 @@ class TestAssetPickerDelegate extends AssetPickerDelegate {
     return result;
   }
 }
+
+const AssetEntity testAssetEntity = AssetEntity(
+  id: 'test',
+  typeInt: 0,
+  width: 0,
+  height: 0,
+);
