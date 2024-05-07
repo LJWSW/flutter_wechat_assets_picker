@@ -25,12 +25,12 @@ dependencies:
   #  wechat_camera_picker: ^4.2.1
   wechat_camera_picker:
     git:
-      url: git@github.com:flutting/flutter_wechat_camera_picker.git
+      url: git@github.com:LJWSW/flutter_wechat_camera_picker.git
       ref: flutter3.19/4.2.1
 
   photo_manager:
     git:
-      url: git@github.com:flutting/flutter_photo_manager.git
+      url: git@github.com:LJWSW/flutter_photo_manager.git
       ref: flutter3.19/3.0.0
 
 dev_dependencies:
